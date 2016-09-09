@@ -55,3 +55,14 @@ However, in cases where the height of the containing block is not explicitly dec
     <p style="height: 50%;">NOT half as tall; height reset to auto</p>
 </div>
 ```
+######Auto Heights
+If an auto-height, normal-flow block box has only block-level children, then its default height will be the distance from the top of the topmost block-level child’s outer border edge to the bottom of the bottommost block-level child’s outer bottom border edge.  
+Therefore, the margins of the child elements will “stick out” of the element that contains them.  
+However, if the (parent)block-level element has either top or bottom padding, or top or bottom borders, then its height will be the distance from the top of the outer-top margin edge of its topmost child to the outer-bottom margin edge of its bottommost child:
+[see fiddle](https://jsfiddle.net/rengokantai/vgrvtruu/)
+
+#####Negative Margins and Collapsing
+
+
+
+####Inline Elements
