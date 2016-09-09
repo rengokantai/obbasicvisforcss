@@ -66,3 +66,26 @@ However, if the (parent)block-level element has either top or bottom padding, or
 
 
 ####Inline Elements
+#####Line Layout
+inline long text will collapse it line-height not set.
+[see fiddle](https://jsfiddle.net/rengokantai/ft0vqqyp/)  
+[css-tricks text with padding](https://css-tricks.com/multi-line-padded-text/)  
+text-align (tbc)
+
+#####Basic Terms and Concepts
+- Padding, borders, and margins on nonreplaced elements have no vertical effect on inline elements or the boxes they generate; that is, they do not affect the height of an element’s inline box (and thus the line box that contains the element).
+- Margins and borders on replaced elements do affect the height of the inline box for that element and, by implication, the height of the line box for the line that contains the element.  
+
+#####Inline Formatting
+It’s important to understand that line-height actually affects inline elements and other inline content, not block-level elements—at least, not directly.  
+We can set a line-height value for a block-level element, but the value will have a visual impact only as it’s applied to inline content within that block-level element.  
+
+Declaring (parent element)
+```
+p{line-height: 24pt;} 
+```
+means that the minimum heights for each line box(child element) is 24 points.  
+Technically, content(child element) can inherit this line height only if an inline element does so.  
+
+
+#####Vertical Alignment
