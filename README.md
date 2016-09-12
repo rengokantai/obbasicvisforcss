@@ -85,7 +85,32 @@ Declaring (parent element)
 p{line-height: 24pt;} 
 ```
 means that the minimum heights for each line box(child element) is 24 points.  
+but box height is 15px(rather than 12px(inline-height), because align by baseline
 Technically, content(child element) can inherit this line height only if an inline element does so.  
 
 
 #####Vertical Alignment
+Top of its inline box must be aligned with the top of the line box for its line.  
+[vertical-align: top/text-top](http://stackoverflow.com/questions/31667262/what-to-use-vertical-aligntop-or-vertical-aligntext-top)  
+[center text vertically](http://stackoverflow.com/questions/14904950/vertically-centre-text-in-a-div?rq=1)  
+
+######Managing the line-height
+We can set borders for inline texts, Ex
+```
+a:link {border: 1px solid blue;}
+```
+this border will use space of left and right spaces, but not top and buttom.  
+So set a decent line-height is necessary  
+[link](https://jsfiddle.net/rengokantai/101txeLc/)  
+
+######Scaling Line Heights
+```
+body {line-height: 1.5;}
+p {font-size: 15px; line-height: 1.5;}
+small {font-size: 66%;} //line-height:15px
+big {font-size: 200%;} //line-height:45px
+```
+######Adding Box Properties
+[fiddle](https://jsfiddle.net/rengokantai/101txeLc/2/)
+
+######Changing Breaking Behavior
