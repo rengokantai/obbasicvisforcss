@@ -20,7 +20,6 @@ An inline element can be a descendant of a block element, but the reverse is not
 (only a element premits,see below)
 [Are block-level elements allowed inside inline-level elements in HTML5?](http://stackoverflow.com/questions/6061869/are-block-level-elements-allowed-inside-inline-level-elements-in-html5?noredirect=1&lq=1)  
 
-
 #####Horizontal Formatting
 
 #####Horizontal Properties
@@ -114,3 +113,23 @@ big {font-size: 200%;} //line-height:45px
 [fiddle](https://jsfiddle.net/rengokantai/101txeLc/2/)
 
 ######Changing Breaking Behavior
+BOX-DECORATION-BREAK: defaulr=slice  
+clone:Each fragement of the element to be drawn as if it were a standalone box.
+
+######Glyphs Versus Content Area
+The paintingarea of an inline nonreplaced element is left to the user agent. 
+######Inline Replaced Elements
+Replaced elements can increase the height of the line box but not the value of line-height.  
+Content, margins, borders, and padding is used to define the element’s inline box. 
+######Adding Box Properties
+[fiddle](https://jsfiddle.net/rengokantai/101txeLc/3/)  
+for vertical direction, margin, border,padding works on img not span text
+
+
+
+######Inline-Block Elements
+Inline-block element will rest on the baseline of the text line by default and will not linebreak within itself.  
+
+#######Run-in Elements (few support, skipped)
+tbc
+######Computed Values
